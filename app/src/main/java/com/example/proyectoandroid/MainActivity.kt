@@ -16,5 +16,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,Calculo::class.java)
             startActivity(intent)
         }
+
+        // Reto 2: Botón de búsqueda en internet
+        btnWeb.setOnClickListener{
+            val intent2 = Intent(this,PaginaWeb::class.java)
+            startActivity(intent2)
+        }
     }
 }
