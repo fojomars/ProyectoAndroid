@@ -22,5 +22,11 @@ class MainActivity : AppCompatActivity() {
             val intent2 = Intent(this,PaginaWeb::class.java)
             startActivity(intent2)
         }
+
+        // Reto 3: Botón de capturar una imagen con la camara
+        btnCamara.setOnClickListener {
+            val  intent = Intent(this, Camara::class.java)
+            startActivity(intent)
+        }
     }
 }
