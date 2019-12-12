@@ -28,5 +28,10 @@ class MainActivity : AppCompatActivity() {
             val  intent = Intent(this, Camara::class.java)
             startActivity(intent)
         }
+
+        btnCambiar.setOnClickListener {
+            val intent = Intent(this,Especial::class.java)
+            startActivity(intent)
+        }
     }
 }
